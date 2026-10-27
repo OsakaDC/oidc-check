@@ -5,7 +5,11 @@ permissions:
   contents: read # This is required for actions/checkout
 
 on: 
-  workflow_dispatch
+  release:
+    types: [published]
+
+  # workflow_dispatch
+  
 
 jobs:
   print:
